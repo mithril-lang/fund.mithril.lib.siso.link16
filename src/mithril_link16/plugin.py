@@ -41,7 +41,7 @@ def call(request):
     raise Refusal("unsupported plugin operation")
 
 class Plugin:
-    id = "fund.mithril.siso.link16"
+    id = "fund.mithril.lib.siso.link16"
     rpc_version = 1
     operations = ('link16-encode', 'link16-decode', 'link16-loopback', 'link16-send', 'link16-receive')
     call = staticmethod(call)
