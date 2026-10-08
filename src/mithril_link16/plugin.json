@@ -1,0 +1,20 @@
+{
+  "schema": "fund.mithril.interop.plugin.v1",
+  "id": "fund.mithril.siso.link16",
+  "version": "0.2.0",
+  "rpcVersion": 1,
+  "entryPoint": "mithril_link16.plugin:Plugin",
+  "operations": [
+    "link16-encode",
+    "link16-decode",
+    "link16-loopback",
+    "link16-send",
+    "link16-receive"
+  ],
+  "standard": "fund.mithril.siso.link16",
+  "effects": {
+    "network": true,
+    "nativeProcess": false,
+    "rf": false
+  }
+}
