@@ -1,0 +1,27 @@
+{
+  "schema": "fund.mithril.lib.binding.v1",
+  "libraryId": "fund.mithril.lib.siso.link16",
+  "pluginId": "fund.mithril.lib.siso.link16",
+  "repository": "https://github.com/mithril-lang/fund.mithril.lib.siso.link16",
+  "iri": "https://mithril.fund/lib/fund.mithril.lib.siso.link16",
+  "rpcVersion": 1,
+  "operations": [
+    "link16-encode",
+    "link16-decode",
+    "link16-loopback",
+    "link16-send",
+    "link16-receive"
+  ],
+  "effects": {
+    "network": true,
+    "nativeProcess": false,
+    "rf": false
+  },
+  "adapters": {
+    "python": "fund.mithril.lib.siso.link16",
+    "hy": "fund.mithril.lib.siso.link16",
+    "cljk": "fund.mithril.lib.siso.link16",
+    "mith": "fund.mithril.lib.siso.link16",
+    "kotoba": "fund.mithril.lib.siso.link16"
+  }
+}

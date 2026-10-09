@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fund-mithril-lib-siso-link16"
-version = "0.3.0"
+version = "0.4.0"
 requires-python = ">=3.11"
-dependencies = ["fund-mithril-lib-interop @ git+https://github.com/mithril-lang/fund.mithril.lib.interop.git@8ec10c56678eb6508515e2eafdb41ace4866a654"]
+dependencies = ["fund-mithril-lib-interop @ git+https://github.com/mithril-lang/fund.mithril.lib.interop.git@c622e7ad4ca862416c80c11508ccdb636abd3835"]
 
 [project.entry-points."mithril.interop.plugins"]
 "fund.mithril.lib.siso.link16" = "mithril_link16.plugin:Plugin"
@@ -15,4 +15,4 @@ dependencies = ["fund-mithril-lib-interop @ git+https://github.com/mithril-lang/
 where = ["src"]
 
 [tool.setuptools.package-data]
-"*" = ["*.json", "*.xml"]
+"*" = ["*.json", "*.xml", "*.cljk", "*.kotoba", "*.mith"]

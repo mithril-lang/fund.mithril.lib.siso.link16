@@ -1,0 +1,9 @@
+(ns fund.mithril.lib.siso.link16 (:export [library-id library-iri accepts request]))
+(defn library-id [] :string "fund.mithril.lib.siso.link16")
+(defn library-iri [] :string "https://mithril.fund/lib/fund.mithril.lib.siso.link16")
+(defn accepts [member :string] :i64 (if (= (string-compare member "link16-encode") 0) 1 (if (= (string-compare member "link16-decode") 0) 1 (if (= (string-compare member "link16-loopback") 0) 1 (if (= (string-compare member "link16-send") 0) 1 (if (= (string-compare member "link16-receive") 0) 1 0))))))
+(defn request [member :string arguments-json :string] :string
+  (if (= (accepts member) 1)
+    (string-concat "{\"operation\":\"library-call\",\"libraryId\":\"fund.mithril.lib.siso.link16\",\"member\":\""
+      (string-concat member (string-concat "\",\"arguments\":" (string-concat arguments-json "}"))))
+    "{\"operation\":\"invalid-library-member\"}"))

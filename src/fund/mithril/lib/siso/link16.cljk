@@ -1,0 +1,8 @@
+(ns fund.mithril.lib.siso.link16
+  (:refer-clojure :exclude [resolve])
+  (:require [fund.mithril.lib.interop :as host]))
+(def library-id "fund.mithril.lib.siso.link16")
+(def operations #{"link16-encode" "link16-decode" "link16-loopback" "link16-send" "link16-receive"})
+(defn resolve [transport] (host/resolve-library transport library-id))
+(defn invoke! [transport member arguments]
+  (host/invoke-library transport library-id operations member arguments))

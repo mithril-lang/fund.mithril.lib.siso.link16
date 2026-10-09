@@ -1,0 +1,39 @@
+{
+  "@context": "https://mithril.fund/context/v1",
+  "@id": "https://mithril.fund/lib/fund.mithril.lib.siso.link16",
+  "@type": "Library",
+  "ontology": "06aaeed000c03b721496fbcfe19ee3212ed8f17eeefb79b44d5b9e3c86c1ab64",
+  "version": 1,
+  "exports": [
+    {
+      "symbol": "https://mithril.fund/lib/fund.mithril.lib.siso.link16/operation/link16-encode",
+      "kind": "mith:handler",
+      "label": "link16-encode",
+      "confidenceFloor": 10000
+    },
+    {
+      "symbol": "https://mithril.fund/lib/fund.mithril.lib.siso.link16/operation/link16-decode",
+      "kind": "mith:handler",
+      "label": "link16-decode",
+      "confidenceFloor": 10000
+    },
+    {
+      "symbol": "https://mithril.fund/lib/fund.mithril.lib.siso.link16/operation/link16-loopback",
+      "kind": "mith:handler",
+      "label": "link16-loopback",
+      "confidenceFloor": 10000
+    },
+    {
+      "symbol": "https://mithril.fund/lib/fund.mithril.lib.siso.link16/operation/link16-send",
+      "kind": "mith:handler",
+      "label": "link16-send",
+      "confidenceFloor": 10000
+    },
+    {
+      "symbol": "https://mithril.fund/lib/fund.mithril.lib.siso.link16/operation/link16-receive",
+      "kind": "mith:handler",
+      "label": "link16-receive",
+      "confidenceFloor": 10000
+    }
+  ]
+}
